@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./assets/css/reset.css">
   <link rel="stylesheet" href="./assets/css/style.css">
+  <script defer src="./assets/js/data.js"></script>
   <script defer src="./assets/js/index.js"></script>
   <title>News</title>
 </head>
@@ -16,7 +17,7 @@
     <div class="container">
       <div class="headerInner">
         <div class="logo">FreshNews</div>
-        <input type="text" id="search" placeholder="Search an article">
+        <input type="text" name="search" id="search" placeholder="Search an article">
       </div>
     </div>
   </header>
@@ -30,11 +31,11 @@
             <form action="" class="newPost">
               <label class="label">
                 <p class="labelText">Post title</p>
-                <input type="text" id="postTitle" class="input">
+                <input type="text" id="postTitle" name="title" class="input">
               </label>
               <label class="label">
                 <p class="labelText">Post Content</p>
-                <textarea class="input" id="postContent" cols="30" rows="10"></textarea>
+                <textarea class="input" name="description" id="postContent" cols="30" rows="10"></textarea>
               </label>
               <div class="buttons">
                 <button type="submit" class="btn">Publish</button>
@@ -43,18 +44,6 @@
             </form>
           </div>
           <div class="newsContainer" id="newsContainer">
-            <article class="postWrapper background">
-              <div class="postHeader">
-                <h3 class="postTitle">Lorem ipsum dolor sit.</h3>
-                <p class="date">01.01.2021</p>
-              </div>
-              <div class="postContent">
-                <p class="description">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam ratione natus soluta omnis saepe
-                  possimus minus et doloribus perspiciatis deleniti?
-                </p>
-              </div>
-            </article>
           </div>
         </div>
       </div>

@@ -93,6 +93,7 @@ body{
 }
 .postWrapper{
   padding: 20px;
+  margin: 20px 0;
 }
 .postHeader{
   display: flex;
